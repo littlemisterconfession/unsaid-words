@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #dbe9f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Georgia", serif;
+}
+
+/* Envelope */
+.envelope {
+  width: 260px;
+  height: 180px;
+  background: #f5f0e6;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Wax seal */
+.wax-seal {
+  width: 40px;
+  height: 40px;
+  background: darkred;
+  border-radius: 50%;
+  position: absolute;
+  top: 70px;
+  left: 110px;
+}
+
+/* Letter */
+.letter {
+  position: absolute;
+  width: 70%;
+  max-width: 600px;
+  background: #fffaf0;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  animation: unfold 1.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes unfold {
+  from {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
